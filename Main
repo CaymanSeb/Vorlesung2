@@ -1,0 +1,68 @@
+#include "stdafx.h"
+#ifndef DOPPEL
+#define DOPPEL
+#include "integer_operations.h"
+#include <iostream>
+using namespace std;
+
+int main() {
+
+	do {
+
+		cout << "Hallo, mit diesem Programm können sie drei Integer zahlen verarbeiten.\n" 
+				"Sie haben folgende Möglichkeiten:\n"
+				"[s] Addiert 3 Integer Zahlen\n"
+				"[M] Gibt aus drei Integer Zahlen das Maximum aus\n"
+				"[m] Gibt aus drei Integer Zahlen das Minimum aus\n"
+				"[h], [H] Gibt eine Übersicht über die Befehle aus\n"
+				"[x], [X] Beendet das Programm\n" << endl;
+
+		char eingabe = 'l';
+
+		cin >> eingabe;
+
+		switch (eingabe) {
+			case 's':
+				cout << "Bitte geben Sie drei Integer Zahlen ein." << endl;
+				int a, b, c;
+				cin >> a >> b >> c;
+				cout << sum_int(a, b, c) << endl;
+				break;
+
+			case 'M':
+				cout << "Bitte geben Sie drei Integer Zahlen ein." << endl;
+				int d, e, f;
+				cin >> d >> e >> f;
+				cout << max_int(d, e, f) << endl;
+				break;
+
+			case 'm':
+				cout << "Bitte geben Sie drei Integer Zahlen ein." << endl;
+				int g, h, i;
+				cin >> g >> h >> i;
+				cout << min_int(g, h, i) << endl;
+				break;
+			
+			case 'h':
+
+			case 'H':
+				cout << "[s] Addiert 3 Integer Zahlen\n"
+						"[M] Gibt aus drei Integer Zahlen das Maximum aus\n"
+						"[m] Gibt aus drei Integer Zahlen das Minimum aus\n"
+						"[x], [X] Beendet das Programm\n" << endl;
+				break;
+				
+			case 'x':
+
+			case 'X':
+				cout << "Vielen Dank für Ihre Aufmerksamkeit! Das Programm wurde beendet." << endl;
+				return 0;
+				break;
+			}
+	}
+
+	while (true);
+
+	return 0;
+}
+#endif
