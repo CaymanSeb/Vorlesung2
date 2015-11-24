@@ -1,4 +1,5 @@
-#pragma once
+#ifndef DOPPEL
+#define DOPPEL
 
 #include "integer_operations.cpp"
 
@@ -10,3 +11,4 @@ int min_int(int, int, int);
 
 // Errechne Summe dreier ganzer Zahlen
 int sum_int(int, int, int);
+#endif
