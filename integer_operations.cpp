@@ -1,6 +1,4 @@
 #include "stdafx.h"
-#ifndef DOPPEL
-#define DOPPEL
 #include "integer_operations.h"
 #include <math.h>
 
@@ -22,4 +20,3 @@ int sum_int(int a, int b, int c) {
 
 	return a + b + c;
 }
-#endif
