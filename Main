@@ -1,6 +1,4 @@
 #include "stdafx.h"
-#ifndef DOPPEL
-#define DOPPEL
 #include "integer_operations.h"
 #include <iostream>
 using namespace std;
@@ -65,4 +63,3 @@ int main() {
 
 	return 0;
 }
-#endif
